@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: slo-orchestrator
+spec:
+  selector:
+    app: slo-orchestrator
+  ports:
+  - port: 80
+    targetPort: 8080
